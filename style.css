@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono", monospace;
+}
+
+body {
+    background-color: rgb(196, 162, 131);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.To-DoList {
+    height: 700px;
+    width: 500px;
+    background-image: url(./Herobg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.To-DoList h1 {
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
+    backdrop-filter: blur(5px);
+    padding: 15px 0;
+
+}
+
+.ToDoform {
+    width: 80%;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    width: 100%;
+    height: 120px;
+
+}
+
+.inputText {
+    width: 70%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 40px;
+    background-color: rgb(252, 199, 157);
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+}
+
+.add {
+    width: 20%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background-color: rgb(255, 213, 174);
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+li {
+    border-radius: 10px;
+    background-color: rgb(255, 213, 174);
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    padding: 10px 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+
+}
+
+.delete {
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    opacity: 40%;
+}
+
+.delete:hover {
+    background-color: red;
+}
+
+li input {
+    position: absolute;
+    left: 10px;
+}
+
+.avoideoverflow {
+    height: 449px;
+    width: 100%;
+    width: 80%;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: rgb(26, 75, 26);
+    color: white;
+    user-select: none;
+}
+.hide{
+    display: none;
+}
