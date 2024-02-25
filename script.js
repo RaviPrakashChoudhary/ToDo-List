@@ -30,7 +30,8 @@ AddBtn.addEventListener('click', (e) => {
         taskItems.querySelector('.delete').addEventListener('click', function () {
             taskItems.remove();
         })
-        Tasks.appendChild(taskItems)
+        Tasks.appendChild(taskItems);
+        saveData()
     }
 })
 
